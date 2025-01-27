@@ -2,7 +2,8 @@
 with pkgs;
 mkShell {
   buildInputs = [ (perl.withPackages (ps: with ps; [
-    PLS # Language server
+    Test2Suite
     #TestLib
+    PLS # Language server
   ])) ];
 }
